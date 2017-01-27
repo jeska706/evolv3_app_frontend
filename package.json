@@ -1,0 +1,22 @@
+{
+  "name": "evolv3_app_frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeska706/evolv3_app_frontend.git"
+  },
+  "author": "Jes & Steph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeska706/evolv3_app_frontend/issues"
+  },
+  "homepage": "https://github.com/jeska706/evolv3_app_frontend#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
