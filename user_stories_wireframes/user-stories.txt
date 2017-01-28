@@ -1,0 +1,7 @@
+- A user should be able to register to have an account
+- A user should be able to log in to their account
+- A visitor should be able to see the gallery on the home page
+- A user should be able to click on a masterpiece and see a white canvas
+- A user should be able to draw/paint on the white canvas to create their masterpiece
+- A user should be able to see their creation on their account page
+- A user should be able to log out
