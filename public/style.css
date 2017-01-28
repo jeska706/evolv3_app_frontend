@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.animation-text-wrapper {
+    margin: auto;
+    text-align: center;
+    height: 10%;
+}
+
+img {
+    display: inline;
+    margin: 3% auto 0;
+    width: 10%;
+
+    animation: appear 7s ease-out backwards;
+}
+
+@keyframes appear {
+    0% {
+        transform: scale(0);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+}
+
+svg {
+    width: 100%;
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+}
+
+.strokes {
+    stroke: gray;
+    stroke-width: 1;
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300;
+
+    animation: offset 5s linear forwards;
+}
+
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
