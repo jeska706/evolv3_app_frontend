@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jeska706/evolv3_app_frontend#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "superagent": "^3.4.0"
   }
 }
