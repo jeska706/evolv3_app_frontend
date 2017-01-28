@@ -17,21 +17,17 @@
         <![endif] -->
     </head>
     <body ng-controller="mainController as ctrl">
-        hello
-        <!-- DEAD ZONE????     -->
-        {{2 + 2}}
-        <div class="">
-            <h1>HELLO</h1>
-            <div ng-repeat="user in users.ctrl">
-                <h2>{{ctrl.user}}</h2>
-                {{2 + 6}}
-            </div>
+        <!-- users -->
+        <div ng-repeat="user in ctrl.users">
+            <h2>{{ user.name }}</h2>
         </div>
-        <!-- This is coming back as commented out, why?? -->
-        <div ng-repeat="artist in ctrl.artists">
-            {{ ctrl.artist }}
+
+        <!--  need to get this to associate with controller -->
+        <div ng-repeat="art in ctrl.art">
+            Title: {{ art.title }}
+            <img ng-src="{{art.headerImage.url}}" />
         </div>
-        {{2 + 2}}
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
