@@ -37,8 +37,8 @@ app.controller('mainController', ['$http', function($http){
             console.log(res, " :successful callback");
             //returns array of objects
             this.artObjects = res.data.artObjects;
+            var allData = [];
             var getData = function(){
-                var allData = [];
                 for (var i = 0; i < res.data.artObjects.length;i ++){
                     this.data = res.data.artObjects[i];
                     console.log(this.data);
@@ -46,12 +46,12 @@ app.controller('mainController', ['$http', function($http){
                     console.log(this.headShot);
                     this.title = this.data.title;
                     console.log(this.title);
-                    this.artist = this.data.principalOrFirstMaker;
-                    console.log(this.artist);
+                    this.artists = this.data.principalOrFirstMaker;
+                    console.log(this.artists);
                 }
             }
             getData();
-
+            console.log(this.artist);
     },
         function(res) {
             console.log(res, " :failed callback");
