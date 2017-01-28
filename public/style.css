@@ -11,7 +11,7 @@ html {
 
 .logo {
     display: inline;
-    margin: 3% auto 0;
+    margin: 7% auto 0;
     width: 10%;
 
     animation: appear 7s ease-out backwards;
