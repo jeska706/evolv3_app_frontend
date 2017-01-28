@@ -17,17 +17,31 @@
         <![endif] -->
     </head>
     <body ng-controller="mainController as ctrl">
-        <!-- users -->
-        <div ng-repeat="user in ctrl.users">
-            <h2>{{ user.name }}</h2>
-        </div>
 
-        <!--  need to get this to associate with controller -->
-        <div ng-repeat="art in ctrl.art">
-            Title: {{ art.title }}
-            <img ng-src="{{art.headerImage.url}}" />
-        </div>
+        <div class="container">
+            <!-- Logo Here -->
+            <header>
+                <div class="">
+                    <h1>Evolv3</h1>
+                </div>
+            </header>
 
+            <!-- users, uncomment out if needed  -->
+            <!-- <div ng-repeat="user in ctrl.users">
+                <h2>{{ user.name }}</h2>
+            </div> -->
+
+            <!-- Begining of gallery -->
+            <div class="container">
+                <div ng-repeat="art in ctrl.art">
+                    Title: {{ art.title }}<br>
+                    Artist: {{ art.principalOrFirstMaker }}
+                    <div class="container">
+                        <img ng-src="{{art.headerImage.url}}" />
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

@@ -28,23 +28,18 @@ app.controller('mainController', ['$http', function($http){
         function(res) {
             console.log(res, " :failed callback");
     }.bind(this));
-    console.log(this);
+
 //-------------------- API hit to Rijks museum ,  set of 10 -------------
 //      need to set a randomizer on this, currently returning same 10 want 16
 
     $http({
         method: "GET",
-        url: "https://www.rijksmuseum.nl/api/en/collection/?key=mherhzxy&format=json&pageSize=16"
-        //WANT TO USE THIS URL BUT IT RETURNS W/AND ERROR
-        // url: "https://www.rijksmuseum.nl/api/en/portretten/?key=mherhzxy&format=json&pageSize=16"
+        url: "https://www.rijksmuseum.nl/api/en/collection/?q=masterpieces&key=mherhzxy&format=json"
     }).then(
         function(res){
             console.log(res, " :successful callback");
-            returns array of objects
-            console.log(controller);
             controller.art = res.data.artObjects;
             console.log(controller.art);
-
     },
         function(res) {
             console.log(res, " :failed callback");
