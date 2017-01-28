@@ -26,8 +26,8 @@ app.controller('mainController', ['$http', function($http){
     }.bind(this));
 
 
-//-------------------- API hit to Rijks museum ,  sets of 16 -------------
-
+//-------------------- API hit to Rijks museum ,  set of 10 -------------
+//      need to set a randomizer on this, currently returning same 10
 
     $http({
         method: "GET",
@@ -37,7 +37,9 @@ app.controller('mainController', ['$http', function($http){
             console.log(res, " :successful callback");
             //returns array of objects
             this.artObjects = res.data.artObjects;
+            //empty data array
             var allData = [];
+            //artObject array
             var getData = function(){
                 for (var i = 0; i < res.data.artObjects.length;i ++){
                     this.data = res.data.artObjects[i];
@@ -51,7 +53,7 @@ app.controller('mainController', ['$http', function($http){
                 }
             }
             getData();
-            console.log(this.artist);
+
     },
         function(res) {
             console.log(res, " :failed callback");

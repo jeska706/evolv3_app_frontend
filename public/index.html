@@ -18,19 +18,20 @@
     </head>
     <body ng-controller="mainController as ctrl">
         hello
+        <!-- DEAD ZONE????     -->
         {{2 + 2}}
-        <div ng-repeat="artist in ctrl.artists">
-            {{ artist }}
+        <div class="">
+            <h1>HELLO</h1>
+            <div ng-repeat="user in users.ctrl">
+                <h2>{{ctrl.user}}</h2>
+                {{2 + 6}}
+            </div>
         </div>
-
-
-
-
-
-
-
-
-
+        <!-- This is coming back as commented out, why?? -->
+        <div ng-repeat="artist in ctrl.artists">
+            {{ ctrl.artist }}
+        </div>
+        {{2 + 2}}
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
