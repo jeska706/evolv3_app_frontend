@@ -6,6 +6,7 @@ app.controller('mainController', ['$http', function($http){
     console.log('controller connected');
     var museumId = "1826576--jeska706";
     // my usersets https://www.rijksmuseum.nl/api/nl/usersets/1826576-myfirstcollection?key=mherhzxy&format=json
+    // hide this key
     var apiKey = "mherhzxy";
     this.user = {};
     this.artist = [];
@@ -24,6 +25,7 @@ app.controller('mainController', ['$http', function($http){
             console.log(res, " :successful callback");
             controller.users = res.data;
             // console.log(this.users);
+
     },
         function(res) {
             console.log(res, " :failed callback");
