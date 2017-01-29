@@ -1,0 +1,116 @@
+/*-------------- LOGO AND ANIMATION --------------*/
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.animation-text-wrapper {
+    margin: auto;
+    text-align: center;
+    height: 5%;
+}
+
+.logo {
+    display: inline;
+    margin: 7% auto 0;
+    width: 10%;
+
+    animation: appear 7s ease-out backwards;
+}
+
+@keyframes appear {
+    0% {
+        transform: scale(0);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+}
+
+svg {
+    width: 100%;
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+}
+
+.strokes {
+    stroke: gray;
+    stroke-width: 1;
+    stroke-dasharray: 1300;
+    stroke-dashoffset: 1300;
+
+    animation: offset 5s linear forwards;
+}
+
+@keyframes offset {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+/*-------------- NAVBAR --------------*/
+ul li a {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+
+
+/*-------------- FROM THE ARTISTS --------------*/
+div {
+    margin: 0;
+}
+
+.banner {
+     background-color: gray;
+}
+
+.banner h1 {
+    margin: 0;
+    height: 50px;
+    padding: 0.5em 1em;
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+
+.categories {
+    width: 200px;
+    text-align: center;
+}
+
+
+
+/*-------------- FROM THE USERS --------------*/
+div {
+    margin: 0;
+}
+
+.banner {
+     background-color: gray;
+}
+
+.banner h1 {
+    margin: 0;
+    height: 50px;
+    padding: 0.5em 1em;
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+/*-------------- MAIN GALLERY --------------*/
+img {
+    width: 300px;
+    /*height: 300px;*/
+}
