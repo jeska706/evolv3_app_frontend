@@ -116,6 +116,12 @@
                 <div class="banner">
                     <h1>From The Users</h1>
                 </div>
+                <div class="">
+                    <img class="categories" src="Painting" alt="">
+                    <img class="categories" src="Photography" alt="">
+                    <img class="categories" src="Sculpture" alt="">
+                    <img class="categories" src="All Mediums" alt="">
+                </div>
             </div>
             <!-- FROM THE USERS ENDS -->
 
@@ -128,8 +134,11 @@
                 <h2>{{ user.name }}</h2>
             </div> -->
 
-            <!-- Begining of gallery -->
-            <div class="container">
+            <!-- GALLERY STARTS -->
+            <div id="galery">
+                <div class="banner">
+                    <h1>Main Gallery</h1>
+                </div>
                 <div ng-repeat="art in ctrl.art">
                     Title: {{ art.title }}<br>
                     Artist: {{ art.principalOrFirstMaker }}
@@ -138,6 +147,7 @@
                     </div>
                 </div>
             </div>
+            <!-- GALLERY ENDS -->
 
         </main>
 

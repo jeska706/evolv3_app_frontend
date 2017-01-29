@@ -62,7 +62,7 @@ ul li a {
 
 
 
-/*-------------- FROM THE ARTISTS --------------*/
+/*-------------- BANNERS --------------*/
 div {
     margin: 0;
 }
@@ -73,39 +73,27 @@ div {
 
 .banner h1 {
     margin: 0;
-    height: 50px;
-    padding: 0.5em 1em;
-    font-size: 2em;
+    padding: 0.8em 1em;
+    font-size: 1.2em;
     color: white;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
+    text-align: center;
+    letter-spacing: 0.1em;
 }
 
+
+
+/*-------------- FROM THE ARTISTS --------------*/
 .categories {
     width: 200px;
-    text-align: center;
+
 }
 
 
 
 /*-------------- FROM THE USERS --------------*/
-div {
-    margin: 0;
-}
 
-.banner {
-     background-color: gray;
-}
-
-.banner h1 {
-    margin: 0;
-    height: 50px;
-    padding: 0.5em 1em;
-    font-size: 2em;
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
-}
 
 
 
