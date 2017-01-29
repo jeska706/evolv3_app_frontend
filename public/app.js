@@ -45,22 +45,50 @@ app.controller('mainController', ['$http', function($http){
         function(res) {
             console.log(res, " :failed callback");
     }.bind(this));
+//---------------------------API Brooklyn Museum ---------------------------
 
-    // form field
-    this.addUser = function(){
-        console.log('addUser working: ' ,this.formdata);
-        $http({
-            method: 'POST',
-            url: "http://localhost:3000/users",
-            data: this.formdata
-        }).then(function(res){
-            console.log("data from server: ", res);
-            this.formdata = {};
-        },
-        function(res){
-            console.log(res, " :failed callback in form field");
-        }.bind(this));
-    }//end of form
+        //Not working
+
+    // $http({
+    //     method: "GET",
+    //     url: "'https://www.brooklynmuseum.org/api/v2/?key=QmQt8g4my3GCKaeNLeZ4raVzx1byP9HT&format=json"
+    // }).then(
+    //     function(res){
+    //         console.log(res, " :successful callback");
+    //         // controller.art = res.data.artObjects;
+    //         // console.log(controller.art);
+    //     },
+    //     function(res) {
+    //         console.log(res, " :failed callback");
+    // }.bind(this));
+    //     $http({
+    //         url: 'https://www.brooklynmuseum.org/api/v2/exhibition?limit=10',
+    //         type: 'GET',
+    //         beforeSend: function (xhr) {
+    //           xhr.setRequestHeader('api_key', ' QmQt8g4my3GCKaeNLeZ4raVzx1byP9HT');
+    //         },
+    //         data: {},
+    //         success: function (res) {
+    //             console.log(res)
+    //          },
+    //         error: function () { },
+    //   });
+
+//---------------------------- form field ------------------------------------
+    // this.addUser = function(){
+    //     console.log('addUser working: ' ,this.formdata);
+    //     $http({
+    //         method: 'POST',
+    //         url: "http://localhost:3000/users",
+    //         data: this.formdata
+    //     }).then(function(res){
+    //         console.log("data from server: ", res);
+    //         this.formdata = {};
+    //     },
+    //     function(res){
+    //         console.log(res, " :failed callback in form field");
+    //     }.bind(this));
+    // }//end of form
 
 
 
