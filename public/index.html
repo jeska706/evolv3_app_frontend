@@ -93,7 +93,16 @@
             </div>
             <!-- LOGO AND ANIMATION ENDS -->
         </header>
-
+        <!-- Add users This can be moved, just wanted to set it up -->
+        <div class="container">
+            <form ng-submit='ctrl.addUser()'>
+                <input type="text" ng-model="ctrl.formdata.name" placeholder="name">
+                <input type="text" ng-model="ctrl.formdata.email" placeholder="email">
+                <input type="text" ng-model="ctrl.formdata.password" placeholder="password"><br>
+                <input type="submit">
+            </form>
+        </div>
+        <!-- End of form -->
         <main>
             <!-- FROM THE ARTISTS STARTS -->
             <div id="artists">
@@ -110,7 +119,7 @@
             </div>
             <!-- FROM THE ARTISTS ENDS -->
 
-
+        <!-- Do we need all these catagories for users? Maybe just 4 images of creations instead -->
             <!-- FROM THE USERS STARTS -->
             <div id="from-users">
                 <div class="banner">
@@ -135,7 +144,7 @@
             </div> -->
 
             <!-- GALLERY STARTS -->
-            <div id="galery">
+            <div id="gallery">
                 <div class="banner">
                     <h1>Main Gallery</h1>
                 </div>
