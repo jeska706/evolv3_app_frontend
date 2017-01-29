@@ -14,6 +14,7 @@ app.controller('mainController', ['$http', function($http){
     controller.users = [];
     controller.art = [];
     controller.data = [];
+    controller.formdata = {};
 //------------------  AJAX call to /users -----------------------
    $http({
         method: 'GET',
@@ -40,12 +41,26 @@ app.controller('mainController', ['$http', function($http){
             console.log(res, " :successful callback");
             controller.art = res.data.artObjects;
             console.log(controller.art);
-    },
+        },
         function(res) {
             console.log(res, " :failed callback");
     }.bind(this));
 
-
+    // form field
+    this.addUser = function(){
+        console.log('addUser working: ' ,this.formdata);
+        $http({
+            method: 'POST',
+            url: "http://localhost:3000/users",
+            data: this.formdata
+        }).then(function(res){
+            console.log("data from server: ", res);
+            this.formdata = {};
+        },
+        function(res){
+            console.log(res, " :failed callback in form field");
+        }.bind(this));
+    }//end of form
 
 
 
