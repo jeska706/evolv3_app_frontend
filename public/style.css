@@ -85,12 +85,25 @@ div {
 
 
 /*-------------- FROM THE ARTISTS --------------*/
-.categories {
-    width: 200px;
-
+.img-container {
+    /*display: flex;*/
+    margin: auto;
+    text-align: center;
+    padding: 1em;
 }
 
 
+.categories {
+    width: 200px;
+    height: 200px;
+    margin: 2em;
+}
+
+.categories:hover {
+    width: 250px;
+    height: 250px;
+    margin: 0;
+}
 
 /*-------------- FROM THE USERS --------------*/
 
