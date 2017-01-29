@@ -27,14 +27,20 @@ html {
     }
 }
 
-svg {
-    width: 100%;
+.svg {
+    background: url(wave.svg);
+    background-size: 100px;
+    /*width: 100%;*/
     opacity: 0.5;
     margin: 0;
     padding: 0;
+
+    text-indent: -9999px;
+
 }
 
 .strokes {
+
     stroke: gray;
     stroke-width: 1;
     stroke-dasharray: 1300;
